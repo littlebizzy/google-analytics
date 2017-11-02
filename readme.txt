@@ -25,7 +25,6 @@ Inserts Google Analytics code just above the closing body tag to ensure fastest 
 
 Although Google (along with most web companies) declares you should load GA in the header, this is actually not necessary and can cause many problems with your website loading speed, JS conflicts (or blocks), and code cleanliness. It is always best (and works totally fine) to load third party scripts LAST, not FIRST, at the very bottom of your source code. This plugin does just that by loading GA code just before the `</body>` closing tag.
 
-
 #### Compatibility ####
 
 This plugin has been designed for use on LEMP (Nginx) web servers with PHP 7.0 and MySQL 5.7 to achieve best performance. All of our plugins are meant for single site WordPress installations only; for both performance and security reasons, we highly recommend against using WordPress Multisite for the vast majority of projects.
