@@ -3,7 +3,7 @@
 Plugin Name: Google Analytics
 Plugin URI: https://www.littlebizzy.com/plugins/google-analytics
 Description: Inserts Google Analytics code just above the closing body tag to ensure fastest performance possible and to avoid conflicting with any other scripts.
-Version: 1.0.4
+Version: 1.0.5
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
 License: GPLv3
@@ -25,7 +25,7 @@ if (!function_exists('add_action'))
 // Plugin constants
 define('GASLBZ_FILE', __FILE__);
 define('GASLBZ_PATH', dirname(GASLBZ_FILE));
-define('GASLBZ_VERSION', '1.0.4');
+define('GASLBZ_VERSION', '1.0.5');
 
 // Plugin uninstall hook
 register_uninstall_hook(GASLBZ_FILE, 'gaslbz_plugin_uninstall');
