@@ -1,6 +1,7 @@
 === Google Analytics ===
 
 Contributors: littlebizzy
+Donate link: https://www.patreon.com/littlebizzy
 Tags: google, ga, analytics, traffic, code
 Requires at least: 4.4
 Tested up to: 4.9
