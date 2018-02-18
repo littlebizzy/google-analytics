@@ -3,7 +3,7 @@
 Plugin Name: Google Analytics
 Plugin URI: https://www.littlebizzy.com/plugins/google-analytics
 Description: Inserts Google Analytics code just above the closing body tag to ensure fastest performance possible and to avoid conflicting with any other scripts.
-Version: 1.0.5
+Version: 1.0.6
 Author: LittleBizzy
 Author URI: https://www.littlebizzy.com
 License: GPLv3
@@ -15,8 +15,14 @@ Prefix: GASLBZ
 require_once dirname(__FILE__).'/admin-notices.php';
 GASLBZ_Admin_Notices::instance(__FILE__);
 
-
-/* Initialization */
+/**
+ * Admin Notices Multisite check
+ * Uncomment //return to disable this plugin on Multisite installs
+ */
+require_once dirname(__FILE__).'/admin-notices-ms.php';
+if (false !== \LittleBizzy\GoogleAnalytics\Admin_Notices_MS::instance(__FILE__)) {
+	//return;
+}
 
 // Block direct calls
 if (!function_exists('add_action'))
@@ -25,7 +31,7 @@ if (!function_exists('add_action'))
 // Plugin constants
 define('GASLBZ_FILE', __FILE__);
 define('GASLBZ_PATH', dirname(GASLBZ_FILE));
-define('GASLBZ_VERSION', '1.0.5');
+define('GASLBZ_VERSION', '1.0.6');
 
 // Plugin uninstall hook
 register_uninstall_hook(GASLBZ_FILE, 'gaslbz_plugin_uninstall');
