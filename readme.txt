@@ -7,7 +7,7 @@ Requires at least: 4.4
 Tested up to: 4.9
 Requires PHP: 7.0
 Multisite support: No
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Prefix: GASLBZ
@@ -157,27 +157,31 @@ Please avoid leaving negative reviews in order to get a feature implemented. Ins
 
 == Changelog ==
 
+= 1.0.7 =
+* updated plugin meta
+
 = 1.0.6 =
 * added warning for Multisite installations
 * updated recommended plugins
 
 = 1.0.5 =
 * tested with WP 4.9
-* added support for `define('DISABLE_NAG_NOTICES', true);`
+* added support for `DISABLE_NAG_NOTICES`
 
 = 1.0.4 =
-* optimize plugin code
+* optimized plugin code
+* added rating request notice
 * updated recommended plugins
-* added rating request
 
 = 1.0.3 =
 * updated recommended plugins
 
 = 1.0.2 =
-* added recommended plugins
+* added recommended plugins notice
 
 = 1.0.1 =
 * tested with WP 4.8
 
 = 1.0.0 =
 * initial release
+* tested with PHP 7.0
